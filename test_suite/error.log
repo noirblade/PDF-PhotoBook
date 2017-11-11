@@ -1,0 +1,20 @@
+
+The Root object in /tmp couldn't be found, aborting
+
+The error occurred when executing:
+ at blib/lib/PDF/Reuse.pm (autosplit into blib/lib/auto/PDF/Reuse/xRefs.al) line 4202
+	PDF::Reuse::xRefs(4096, '/tmp') called at blib/lib/PDF/Reuse.pm (autosplit into blib/lib/auto/PDF/Reuse/getPage.al) line 4626
+	PDF::Reuse::getPage('/tmp', 1, '') called at blib/lib/PDF/Reuse.pm (autosplit into blib/lib/auto/PDF/Reuse/prImage.al) line 3368
+	PDF::Reuse::prImage('HASH(0xa274ec0)') called at /usr/local/share/perl/5.10.0/PDF/PhotoBook.pm line 272
+	PDF::PhotoBook::ComposePdf('PDF::PhotoBook=HASH(0x9f4c880)', 'test.pdf') called at /usr/local/share/perl/5.10.0/PDF/PhotoBook.pm line 122
+	PDF::PhotoBook::Create('PDF::PhotoBook=HASH(0x9f4c880)', 'test.pdf') called at ./test.pl line 64
+
+Situation when the error occurred
+
+   Bytes written to the current pdf-file,    pos    = 15
+   Object processed, not necessarily written objNr  = 3
+   Current pdf-file,                         utfil  = test.pdf
+   File logging the run,                     runfil = undef
+   Local time                                       = Fri Nov  6 12:52:58 2009
+
+

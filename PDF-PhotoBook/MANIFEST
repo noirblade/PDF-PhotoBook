@@ -1,0 +1,6 @@
+Changes
+Makefile.PL
+MANIFEST
+README
+t/PDF-PhotoBook.t
+lib/PDF/PhotoBook.pm
